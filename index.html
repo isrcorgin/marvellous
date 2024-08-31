@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marvellous Pet Products</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="demo-styles.css">
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://cdn.glitch.global/7c7d3c3d-4592-49dd-b4d4-87e86867e0ae/marv-logo1-1.png?v=1725015310325" alt="Marvellous Pet Products Logo">
+      </div>
+    </header>
+    
+    <section id="home">
+      <div id="card">
+        <!-- 3D model viewer section -->
+        <model-viewer src="https://cdn.glitch.global/7c7d3c3d-4592-49dd-b4d4-87e86867e0ae/product.glb?v=1725086742655"
+                      ios-src="https://cdn.glitch.global/7c7d3c3d-4592-49dd-b4d4-87e86867e0ae/product.usdz"
+                      poster="https://cdn.glitch.global/7c7d3c3d-4592-49dd-b4d4-87e86867e0ae/product.usdz?v=1725087158174"
+                      alt="A 3D model of an astronaut"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar>
+        </model-viewer>
+        <section class="description">
+          <h1>Welcome to Marvellous Pet Products</h1>
+          <p>We create a wide range of unique products for dogs, cats, and the people who love them. We’re frequently modernizing our product lines in response to current design trends and pet owners’ needs.</p>
+          <p>Marvellous Pet Products was incorporated in 1990. We are a fast-growing manufacturing company in India, offering a wide range of high-quality pet bowls and feeders, giving your pets an ultimate feeding experience.</p>
+          <p>Some of our most popular products are the Natural Series of Mango Wood Bowls, Mango Wood Frame with Stainless Steel Bowls, Wooden Foldable Diners, and a collection of Wooden and Iron Feeders, Aluminum Robusto Bowls, Double Diners, and many more.</p>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Marvellous Pet Products. All rights reserved.</p>
+      <p>This website is a demonstration of modern web technology.</p>
+    </footer>
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
